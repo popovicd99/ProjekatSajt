@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../css/proizvodi.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+       
+        <title>Dobrodosli</title>
+    </head>
+    <body>
+        <div id="popup" class="popup">   
+            <form name="poruci" class="popup-content animate">
+                <div class="close" onclick="document.getElementById('popup').style.display='none'">&times;</div>
+                <div class="neka">
+                    <center>
+                    <p>Unesite Vase podatke</p>
+                    <label for="ime" style="margin-left: 31px;">Ime:</label>
+                    <input type="text" id="ime" name="ime"><br><br>
+                    <label for="prezime">Prezime:</label>
+                    <input type="text" id="prezime" name="prezime"><br><br>
+                    <label for="ulica">Grad,ulica i broj:</label>
+                    <input type="text" id="ulica" name="ulica" style="margin-right: 63px;"><br><br>
+                    <input type="radio" checked id="sporo" name="dostava" value="250">
+                    <label for="sporo"> Obicna dostava(3-7 radnih dana):250din</label><br>
+                    <input type="radio" id="brzo" name="dostava" value="500">
+                    <label for="brzo" style="margin-right: 42px;"> Brza dostava(2 radna dana):500din</label><br>
+                    <input type="submit" class="submit" value="Poruci" id="submit">
+                    </center>
+                </div>
+            </form>
+        </div>
+
+        <header>
+            <a href="../index.html"><img src="../../img/nav/logo.png" class="logo" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Muskarci</a></li>
+                    <li><a href="../index.html">Zene</a></li>
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="container-levo">
+                <div class="container-levo-inside">
+                    <div class="fotorama" data-width="100%" data-ratio="900/600"  data-fit="cover" data-nav="thumbs" data-loop="true">
+                        <img src="../../img/proizvodi/720/1.jpg">
+                        <img src="../../img/proizvodi/720/2.jpg">
+                        <img src="../../img/proizvodi/720/3.jpg">
+                        <img src="../../img/proizvodi/720/4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="container-desno">
+                <div class="container-desno-inside" id="naziv">
+                <p id="x">Nike Air Max 720 </p>    
+                </div>
+                <div class="container-desno-inside" id="opis" > 
+                    <p>What do pool tubes, bouncy castles and the Nike Air Max 720 all have in common? BIG AIR. More air feels more springy, more plush and more comfortable. Has Air Max gone too far? We hope so.</p>   
+                    <ul>
+                        <li>Boja: Cool Grey/Black/Bright Crimson</li>
+                        <li>Artikal: CQ0360-001</li>
+                    </ul>
+                </div>
+                <div class="container-desno-inside" id="cena">
+                    <span id="ce">25.000din</span>
+                    <select class="listBox" name="brojPatika" id="ve" required>  
+                        <option value="EU40"> EU40 </option>  
+                        <option value="EU41"> EU41 </option>   
+                        <option value="EU42"> EU42 </option>   
+                        <option value="EU43"> EU43 </option>   
+                        <option value="EU44"> EU44 </option>   
+                        <option value="EU45"> EU45 </option>
+                        <option value="EU46"> EU46 </option> 
+                        <option value="EU47"> EU47 </option>   
+                        <option value="EU48"> EU48 </option> 
+                    </select>
+                    <div class="dugme" id="dugme">Poruci</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="footer-levo">
+                <div class="footer-levo-inside">
+                    <a href="../index.html" style=" margin: 0; font-weight: bold; text-decoration: none;color:white;">MUSKARCI</a>
+                    <ul>
+                        <li><a href="../index.html">Patike</a></li>
+                        <li><a href="../index.html">Cipele</a></li>
+                        <li><a href="../index.html">Papuce</a></li>
+                    </ul>
+                </div>
+                <div class="footer-levo-inside">
+                    <a href="../index.html" style=" margin: 0; font-weight: bold; text-decoration: none;color:white;">ZENE</a>
+                    <ul>
+                        <li><a href="../index.html">Patike</a></li>
+                        <li><a href="../index.html">Cipele</a></li>
+                        <li><a href="../index.html">Stikle</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-desno">
+                <div style="width: 100%; padding-top: 16px; text-align: center;font-weight: bold;">PRONADJITE NAS I NA</div>
+                <div class="insta"></div>
+                <div class="fb"></div>
+                <div class="twitter"></div>
+            </div>
+            <div class="copyright"><hr>©Danilo Popovic.All rights reserved</div>
+        </footer>
+
+        <script>
+            var x = document.getElementById('popup');
+            window.onclick = function(event) {
+                if (event.target == x) x.style.display = "none";
+            }
+        </script>
+
+        <script src="../../js/products.js"></script>
+    </body>
+</html>

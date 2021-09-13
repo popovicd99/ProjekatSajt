@@ -1,0 +1,443 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  /*-------------------HEADER-------------------*/
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color:white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .logo{
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  nav{
+    margin: 0 4rem 0 17rem;
+  }
+  header nav ul {
+    list-style-type: none;
+    margin: 0; 
+  }
+  header nav li{
+    cursor: pointer;
+    display: inline-block;
+  }
+  header nav li a {
+    color:#111111;
+    text-align: center;
+    padding: 1.25rem 1.1rem;
+    text-decoration: none;
+  }
+  header nav li a:hover {
+    border-style: none none solid none;
+    border-width: 2px;
+    border-color:#111111;
+  }
+  .popup {
+    display: none;
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+  }
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    height: 650px;
+    width: 40%; 
+  }
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  .close {
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 5px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .neka{
+    font-size: 20px;
+    height: 100%;
+  }
+  .neka p{
+    font-size: 50px; 
+    padding-bottom: 20px;
+  }
+  .submit{
+    cursor: pointer;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 400px;
+    height: 60px;
+    color: white;
+    background-color:black;
+  }
+/*-----------------------------------*/
+.container{
+    display: flex;
+    height: 1000px;
+}
+.container-levo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1000px;
+    width: 60%;
+    margin-right: 40px;
+
+}
+.container-levo-inside{
+    margin-bottom: 250px;
+    height: 600px;
+    width: 850px;
+}
+.container-desno{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 64px;
+    height: 936px;
+    width: 40%;
+    
+}
+.container-desno-inside{
+  margin-left: 50px;
+    margin-top: 10px;
+    height: 100px;
+    width: 400px;
+    
+}
+.listBox{
+  margin-left: 10px;
+  border: 0;
+  border-radius: 20px;
+  padding: 6px 50px;
+  width: 40%;
+  background-color: #F5F5F5;
+}
+.listBox:focus:active{
+  border: 0;
+}
+.dugme{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 30px;
+  width: 400px;
+  height: 68px;
+  color: white;
+  background-color:black;
+}
+.dugme:hover{
+  background-color:#404040;
+}
+#naziv{
+  height: 75px;
+  margin-top: 0px; 
+  font-size: 35px;
+}
+#opis{
+  height: 250px; 
+  font-size: 20px;
+}
+#cena{
+  font-size: 23px; 
+  height: 150px;
+}
+/*-----------------FOOTER-------------------*/
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 200px;
+    height:200px;
+    color: white;
+    background-color:#111111;
+    z-index: 100;
+  }
+  .footer-levo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    height: 150px;
+    background-color:#111111;
+  }
+  .footer-levo .footer-levo-inside ul{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 5px;
+  }
+  .footer-levo .footer-levo-inside ul li{
+    padding: 4px 0;
+    
+  }
+  .footer-levo .footer-levo-inside ul li a{
+    text-decoration: none;
+    color: #7E7E7E;
+  }
+  .footer-levo .footer-levo-inside ul li a:hover{
+    color: white;
+  }
+  .footer-levo div{
+    width: 50px;
+    padding: 20px 40px;
+    
+  }
+  .footer-desno{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    height: 150px;
+  }
+  .footer-desno div{
+    height: 35px;
+    width: 40px;
+  }
+  .insta{
+    cursor: pointer;
+    background: url("../img/foot/insta.png")no-repeat center;
+  }
+  .fb{
+    margin: 0px 10px 43px 10px;
+    cursor: pointer;
+    background: url("../img/foot/fb1.png")no-repeat center;
+  }
+  .twitter{
+    cursor: pointer;
+    background: url("../img/foot/twitter.png")no-repeat center;
+  }
+  .twitter:hover{
+    background-color: white;
+  }
+  .fb:hover{
+    background-color: white;
+  }
+  .insta:hover{
+    background-color: white;
+  }
+  .copyright{
+    width: 100%;
+    height: 50px;
+    color: #7E7E7E;
+    background-color: #111111;
+  }
+  hr{
+    border-width: 0.5px;
+    border-color: #7E7E7E;
+  }
+  @media screen and (max-width: 1600px) {
+    footer{
+      padding: 0 50px;
+    }
+  }
+  @media screen and (max-width: 1525px) {
+    .popup-content{
+      width: 600px;
+    }
+    .container{
+      height: 1200px;
+      flex-wrap: wrap;
+      
+    }
+    .container-levo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      width: 100%;
+      margin-right: 0px;
+    }
+    .container-levo-inside{
+      margin: 0;
+      height: 500px;
+      width: 600px;
+    }
+  .container-desno{
+    align-items: center;
+    margin: 0;
+    height: 700px;
+    width: 100%; 
+  }
+  .container-desno-inside{
+    margin-left: 0;
+  }
+  }
+  @media screen and (max-width: 1100px) {
+    .popup-content{
+      width: 500px;
+    }
+    
+    .neka label{
+      font-size: 15px;
+    }
+    .submit{
+      height: 50px;
+      width: 250px;
+    }
+  }
+  @media screen and (max-width: 910px) {
+    .popup-content{
+      width: 500px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    footer{
+      padding: 0 20px;
+    }
+    .footer-levo div{
+      width: 50px;
+      padding: 20px 40px;    
+    }
+    nav{
+      margin: 0;
+    }
+    
+  }
+  @media screen and (max-width: 660px) {
+    .popup-content{
+      width: 300px;
+    }
+    .neka p{
+      font-size: 35px;
+    }
+    #ulica,#ime,#prezime{
+      width: 100px;
+    }
+    .container{
+      height: 1200px;
+      flex-wrap: wrap; 
+    }
+    .container-levo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      width: 100%;
+      margin-right: 0px;
+    }
+    .container-levo-inside{
+      margin: 0;
+      height: 300px;
+      width: 450px;
+    }
+  .container-desno{
+    align-items: center;
+    margin: 0;
+    height: 700px;
+    width: 100%; 
+  }
+  .container-desno-inside{
+    margin-left: 0;
+  }
+  }
+  @media screen and (max-width: 510px) {
+    .container{
+      height: 1000px;
+      flex-wrap: wrap; 
+    }
+    .container-levo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      width: 100%;
+      margin-right: 0px;
+    }
+    .container-levo-inside{
+      margin: 0;
+      height: 300px;
+      width: 350px;
+    }
+  .container-desno{
+    align-items: center;
+    margin: 0;
+    height: 600px;
+    width: 100%; 
+  }
+  .container-desno-inside{
+    margin-left: 0;
+  }
+  }
+  @media screen and (max-width: 479px) {
+    #naziv{
+      height: 40px;
+    }
+    #naziv p{
+      margin: 0; 
+      font-size: 25px;
+    }
+    #opis{
+      height: 150px; 
+      font-size: 15px;
+    }
+    #cena{
+      font-size: 18px; 
+      height: 150px;
+    }
+    .container-desno-inside{
+        width: 300px;
+    }
+    .dugme{
+      height: 50px;
+      width: 300px;
+    }
+    .listBox{
+      padding: 6px 30px;
+    }
+
+  nav{
+    font-size: 12px;
+  }
+  nav ul li a{
+    padding: 1.25rem 0.3rem;
+  }
+  footer{
+    padding: 0 20px;
+    font-size: 10px;
+  }
+  .footer-levo div{
+    width: 20px;
+    padding: 20px 20px;
+    
+  }
+  .footer-desno div{
+  
+    width: 30px;
+  }
+  
+  }
